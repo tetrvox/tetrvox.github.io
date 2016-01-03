@@ -1,0 +1,74 @@
+/* 
+	Common JavaScript library 
+*/
+
+common = (function($) {
+    var o = {};
+	
+	// Hides Top Navigation in mobile version and showes it by click on button "Show Menu"
+    
+	// Second version
+	o.showTopNavigation = function(){
+        var $wrapper = $('.hidden-block-wrapper');
+		var $button = $wrapper.find('> .show-block');
+		
+        $button.click(function(){
+			var $block = $(this).find('+ .hidden-block');
+			
+            $block.slideToggle(function(){
+                $block.toggleClass('mobile-invisible').removeAttr('style');				               
+            });
+            $(this).toggleClass('active');
+        });
+    };
+	
+	
+	
+	// First version
+	/*
+	o.showTopNavigation = function(){
+        var $topNav = $('.main-navigation-mobile');
+        
+        $('.show-navigation').click(function(){
+            $topNav.slideToggle(function(){
+                $topNav.toggleClass('mobile-invisible').removeAttr('style');				               
+            });
+            $(this).toggleClass('active');
+        });
+    };	
+	*/
+	
+	
+	// 
+	o.sliderInitialization = function() {
+		var query = Modernizr.mq('(max-width: 768px)');
+		
+		if (query) {
+			$('.slider').bxSlider({
+			  mode: 'vertical',
+			  captions: true
+			});
+			
+			$('.bxslider2').bxSlider({
+			  mode: 'fade',
+			  captions: false
+			});	
+		}
+	};
+    
+	
+    
+    return o;
+})($);
+
+
+
+$(document).ready(function(){	
+	common.showTopNavigation();
+	common.sliderInitialization();
+});
+
+
+$(window).resize(function(){	
+	//alert('Изменился размер окна');
+});

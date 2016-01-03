@@ -1,0 +1,14 @@
+@color-base: #2d5e8b;
+
+body{
+
+	background-color: @color-base;
+	height: 100px;
+	width:100px;
+
+	h1{
+	color: white;
+	}
+
+}
+

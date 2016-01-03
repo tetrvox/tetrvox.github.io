@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/less" href="css/main.less">
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<script src="js/less.min.js" type="text/javascript"></script>
+	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
+	<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	
+	<script type="text/javascript"> 
+// 	  $(document).ready(function(){
+// 	  	$('#tab-container').easytabs();
+// 	  	$('.partner-slider').bxSlider({
+// 			slideWidth: 130,
+// 			minSlides: 5,
+// 			maxSlides: 5,
+// 			moveSlides: 1,
+// 			slideMargin: 10
+// 	  	}); 
+// 	  		var query = Modernizr.mq('(max-width: 768px)');
+		
+// 		if (query) {
+// 			$('.slider').bxSlider({
+// 			  mode: 'vertical',
+// 			  captions: true
+// 			});
+// 		}	
+// 		 var o = {};
+	
+	
+	
+// common = (function($) {
+//     var o = {};
+	
+	
+// 	// Final version
+// 	o.showTopNavigation = function(){
+// 		var $wrapper = $('.hidden-block-wrapper');
+// 		var $button = $wrapper.find('> .show-block');		
+        
+// 		$button.click(function(){
+// 			var $currentBlock = $(this).find('+ .hidden-block');			
+			
+// 			if ($currentBlock.hasClass('visible')) {				
+// 				panelToggle($currentBlock); // Current block is hiding
+// 			} else {				
+// 				var $activeBlock = $wrapper.find('.visible');
+// 				var isActiveBlock = $activeBlock.size() > 0;
+				
+// 				if (isActiveBlock) {
+// 					panelToggle($activeBlock); // Active block is hiding
+// 				}
+				
+// 				panelToggle($currentBlock); // Current block is appearing
+// 			}			
+//         });
+		
+// 		function panelToggle(panel){
+// 			var button = panel.parent().find('> .show-block');
+			
+// 			panel.slideToggle(function(){
+// 				panel.toggleClass('visible').removeAttr('style');
+// 			});
+// 			button.toggleClass('active');
+// 		}
+//     };	
+	
+	
+
+    
+//     return o;
+// })($);
+
+
+
+
+// 	common.showTopNavigation();
+// 	//common.sliderInitialization();
+
+
+
+// $(window).resize(function(){	
+// 	//alert('Изменился размер окна');
+// });
+
+// 	  })
+	</script> 
+
+	<title>SAP HANA</title>
+</head>
+<body>
+<div id="header">
+	<div class="wrapper">
+		<div class="header-extra">
+			<a href="#" class="logo"><span>The Best-Run Businesses Run SAP</span></a>
+			<div class="user-info">
+			<div>
+					<span class="country mobile-hidden">United States</span>
+					<a href="#" class="mobile-hidden">Login</a>
+			</div>
+				<div>
+					<a href="tel:+1-888-528-8892" class="phone">+1-888-528-8892</a>
+					<a href="#" class="contact mobile-hidden">contact us</a>		
+				</div>
+			</div>
+			<div class="popup-content hidden-block-wrapper">
+				<div class="show-search show-block"></div>
+				<form class="search hidden-block">
+					<input type="text" title="search" placeholder="Search"></input>
+					<input type="submit" class="submit" value=""></input>
+				</form>
+			</div>
+		</div>
+		<div class="hidden-block-wrapper">
+			<span class="show-navigation-mobile show-block"></span>
+			<ul class="main-navigation hidden-block">
+				<li><a href="#">overview</a></li>
+				<li><a href="#">platform</a></li>
+				<li><a href="#">developers</a></li>
+				<li class="active"><a href="#">partners</a></li>
+				<li><a href="#">marketplace</a></li>
+			</ul>
+		</div>
+	</div>	
+	<div id="slogon-panel">
+		<div class="wrapper">
+			<div class="slogon-text-column">
+				<h2>SAP HANA Cloud Partners</h2>
+				<h1 class="slogon">Boundless</h1>
+				<h1 class="slogon">Opportunities</h1>
+				<div class="slogon-description">
+					<h2>Dolor amen sit lorem.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elita rhoncus neque, id pulvin.</p>
+					<p>Lorem ipsum dolor sit amet adipiscing elita rhoncus neque, id pulvin.</p>	
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<div id="main-content">
+	<div class="benefits">
+		<div class="wrapper">
+			<div class="benefits-description">
+				<h2>Conse ctetuer adipis cing morbi.</h2>
+				<p>Ipsum sed pharetra gravida. 
+				Nullam sit. Lorem ipsum dolor sit amet. Conse ctetuer adipis cing morbi comm odo, ipsum sed pharetra.  Lorem ipsum dolor sit amet. Conse ctetuer adipis morbi comm odo, ipsum sed pharetra</p>
+			</div>
+			<blockquote><p>The world is looking for imagination 
+				far beyond the walls of SAP, to the 
+				collective imagination of all of us.</p>
+				<p class="sign">Name name, Company</p>
+			</blockquote>
+			<div class="slider">
+				<div class="benefit-block">					
+					<div class="image-wrapper">
+						<img src="images/content/123rf.jpg">
+					</div>
+					<div class="text-wrapper">
+						<h2>Nullam sit lorem dolor.</h2>
+						<p>Lorem ipsum dolor sit amet. Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra.</p>
+					</div>	
+					</div>
+				<div class="benefit-block">
+					<div class="image-wrapper">
+						<img src="images/content/Ellipse-7.jpg">
+					</div>
+					<div class="text-wrapper">
+						<h2>Conse odo pharetra amen.</h2>
+						<p>Lorem ipsum dolor sit amet. Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra.</p>
+					</div>	
+				</div>
+				<div class="benefit-block">
+					<div class="image-wrapper">
+						<img src="images/content/-123rf.jpg">
+					</div>
+					<div class="text-wrapper">
+						<h2>Morbi dolor nullam lorem.</h2>
+						<p>Lorem ipsum dolor sit amet. Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra.</p>
+					</div>	
+				</div>
+			</div>		
+		</div>
+	</div>
+	<div class="programs">
+		<div class="wrapper">
+			<div class="program-column-wrapper">
+				<div class="program-column-top">			
+					<h2><span class="bold">PartnerEdge</span><br>Program</h2>
+					<h3><span class="bold">1,700</span> + Partners</h3>
+					<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit amen dolor.</p>
+				</div>
+				<div class="program-column-bottom">	
+					<h3><span class="bold">80</span> Lorem ipsum</h3>
+					<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit dolor amen equer.</p>
+				</div>
+					<a href="#" class="button-blue">Join partnerEdge</a>
+			</div>			
+			<div class="program-column-wrapper">
+				<div class="program-column-top">
+					<h2><span class="bold">Startup Focus</span><br>Program</h2>
+					<h3><span class="bold">1,000</span> + Startups</h3>
+					<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit amen dolor.</p>
+				</div>
+				<div class="program-column-bottom">	
+					<h3><span class="bold">55</span> Countries</h3>
+					<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit dolor amen equer.</p>
+				</div>		
+					<a href="#" class="button-blue">Join partnerEdge</a>
+			</div>
+		</div>	
+	</div>
+	<div class="partner-logos">
+		<div class="wrapper">
+			<h1>Partnering With The World's Best</h1>
+			<div id="tab-container" class="tab-container">
+				<ul class="second-navigation etabs mobile-hidden">
+					<li class="tab active"><a href="#tabs-all">all</a></li>
+					<li class="tab"><a href="#tabs-hardware">hardware</a></li>
+					<li class="tab"><a href="#tabs-software">software</a></li>
+					<li class="tab"><a href="#tabs-consulting">consulting</a></li>
+					<li class="tab"><a href="#tabs-hosting">hosting</a></li>
+					<li class="tab"><a href="#tabs-startup">startup</a></li>
+				</ul>
+				<div id="tabs-all">
+			    	<div class="partner-slider">
+				     	<div class="partner-block">
+				    		<div class="image-wrapper">
+				    			<img src="images/content/ibm.jpg">
+				    		</div>	
+			    			<div class="text-wrapper">
+			    				<h3>IBM</h3>
+			    				<p>Lorem ipsum dolor sit amet nullam amen etqer  dolor est...</p>
+			    			</div>
+			    			<div class="more">
+			    				<a href="#">more</a>
+			    			</div>	
+		    			</div>
+				    	<div class="partner-block">
+				    		<div class="image-wrapper">
+				    			<img src="images/content/hp.jpg">
+				    		</div>	
+			    			<div class="text-wrapper">
+			    				<h3>HP</h3>
+			    				<p>Lorem ipsum dolor sit amet nullam amen etqer  dolor est...</p>
+			    			</div>
+			    			<div class="more">
+			    				<a href="#">more</a>
+			    			</div>	
+				    	</div>
+				    	<div class="partner-block">
+				    		<div class="image-wrapper">
+				    			<img src="images/content/cisco.jpg">
+				    		</div>	
+			    			<div class="text-wrapper">
+			    				<h3>Cisco</h3>
+			    				<p>Lorem ipsum dolor sit amet nullam amen etqer  dolor est...</p>
+			    			</div>
+			    			<div class="more">
+			    				<a href="#">more</a>
+			    			</div>	
+				    	</div>
+				    	<div class="partner-block">
+				    		<div class="image-wrapper">
+				    			<img src="images/content/sas.jpg">
+				    		</div>	
+			    			<div class="text-wrapper">
+			    				<h3>SAS</h3>
+			    				<p>Lorem ipsum dolor sit amet nullam amen etqer  dolor est...</p>
+			    			</div>
+			    			<div class="more">
+			    				<a href="#">more</a>
+			    			</div>	
+				    	</div>					    	
+				    	<div class="partner-block">
+				    		<div class="image-wrapper">
+				    			<img src="images/content/dell.jpg">
+				    		</div>	
+			    			<div class="text-wrapper">
+			    				<h3>Dell</h3>
+			    				<p>Lorem ipsum dolor sit amet nullam amen etqer  dolor est...</p>
+			    			</div>
+			    			<div class="more">
+			    				<a href="#">more</a>
+			    			</div>	
+				    	</div>
+				    </div>	
+		  		</div>
+			  	<div id="tabs-hardware">
+			    	<div class="partner-block">
+			    		<div class="image-wrapper">
+			    			<img src="images/content/ibm.jpg">
+			    		</div>	
+		    			<div class="text-wrapper">
+		    				<h3>IBM</h3>
+		    				<p>Lorem ipsum dolor sit amet nullam amen etqer  dolor est...</p>
+		    			</div>
+		    			<div class="more">
+		    				<a href="#">more</a>
+		    			</div>	
+			    	</div>
+			    	<div class="partner-block">
+			    		<div class="image-wrapper">
+			    			<img src="images/content/hp.jpg">
+			    		</div>	
+		    			<div class="text-wrapper">
+		    				<h3>HP</h3>
+		    				<p>Lorem ipsum dolor sit amet nullam amen etqer  dolor est...</p>
+		    			</div>
+		    			<div class="more">
+		    				<a href="#">more</a>
+		    			</div>	
+			    	</div>
+			  	</div>
+			  	<div id="tabs-software">
+			    	<!-- content -->
+			  	</div>
+			  	<div id="tabs-consulting">
+			    	<!-- content -->
+			  	</div>
+			  	<div id="tabs-hosting">
+			    	<!-- content -->
+			  	</div>
+			  	<div id="tabs-startup">
+			    	<!-- content -->
+			  	</div>
+		</div>	
+	</div>
+	<div class="already-partner">
+		<div class="wrapper">
+			<div class="column-title">
+				<h2>Already an SAP Partner?</h2>
+			</div>
+			<div class="column-text">	
+				<p>Lorem ipsum dolor sit amet. Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit.</p>
+			</div>
+			<div class="column-link">	
+				<a href="" class="button-blue">Get Started with HANA Cloud</a>
+			</div>
+		</div>	
+	</div>
+	<div class="contact-bar">
+		<div class="wrapper">
+			<div class="phone-wrapper">
+				<a href="tel:+1-888-528-8892">+1-888-528-8892</a>
+				<div class="contact-descr">Call us</div>
+			</div>
+			<div class="email-wrapper">
+				<a href="mailto:sap@hana">ask SAP HANA</a>
+				<div class="contact-descr">Connect with experts via e-mail</div>
+			</div>
+			<div class="chat-wrapper mobile-hidden">
+				<a href="#">ask an expert</a>
+				<div class="contact-descr">Start a discussion with community experts</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<a href="#">SAP.com</a>
+		<ul class="footer-navigation">
+			<li><a href="#">privacy</a></li>
+			<li><a href="#">terms of use</a></li>
+			<li><a href="#">legal disclosure</a></li>
+			<li><a href="#">copyright</a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
