@@ -43,7 +43,7 @@ common = (function($) {
 		
 		if (query) {
 			$('.bxslider').bxSlider({
-			  mode: 'vertical',
+			  mode: 'horozontal',
 			  captions: true
 			});
 			
@@ -54,7 +54,28 @@ common = (function($) {
 		}
 	};
     
-	
+	o.tabsInitialization = function(){
+		$('#tab-container').easytabs();
+		//var tabsNames = "#tabs-all, #tabs-hardware, #tabs-software, #tabs-consulting, #tabs-hosting, #tabs-startup";
+		$("#tabs-all").bxSlider({
+			  minSlides: 2,
+			  maxSlides: 3,
+			  slideWidth: 120,
+			  adaptiveHeight: true,
+			  responsive: false,
+			  slideMargin: 3,
+			  autoControls: true,
+			});
+		$("#tabs-hardware").bxSlider({
+			  minSlides: 2,
+			  maxSlides: 3,
+			  slideWidth: 120,
+			  adaptiveHeight: true,
+			  responsive: false,
+			  slideMargin: 3,
+			  autoControls: true,
+			});
+	};
     
     return o;
 })($);
@@ -64,6 +85,17 @@ common = (function($) {
 $(document).ready(function(){	
 	common.showTopNavigation();
 	common.sliderInitialization();
+	common.tabsInitialization();
+
+	$("#first-slide").load(function(){
+  		var height = $(this).height();
+   		$( ".bx-viewport" ).css( "height", height );
+	});
+
+	$(".bx-wrapper").css("max-width", "900px");
+	$(".bx-wrapper").removeAttr('height');
+	$(".bx-viewport").css("height", "320px");
+
 });
 
 
